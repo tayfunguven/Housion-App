@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-165dp"
+        tools:layout_editor_absoluteY="-191dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/password_text_reg"
+                android:layout_width="245dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="@string/password_hint_text2"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mail_text_reg" />
+
+            <EditText
+                android:id="@+id/mail_text_reg"
+                android:layout_width="245dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="@string/mail_hint_text2"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name_text_reg" />
+
+            <Button
+                android:id="@+id/reg_button"
+                style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+                android:background="@android:color/holo_green_light"
+                android:textColor="@android:color/white"
+                android:layout_width="113dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/amaranth_bold"
+                android:text="@string/reg_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/password_text_reg" />
+
+            <TextView
+                android:id="@+id/already_account_text"
+                android:layout_width="188dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/amaranth_bold"
+                android:text="@string/already_text"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reg_button" />
+
+            <ImageView
+                android:id="@+id/house_image2"
+                android:layout_width="86dp"
+                android:layout_height="91dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/price" />
+
+            <EditText
+                android:id="@+id/name_text_reg"
+                android:layout_width="245dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="56dp"
+                android:ems="10"
+                android:hint="@string/fullname_text_hint"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/house_image2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

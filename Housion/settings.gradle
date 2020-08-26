@@ -1,0 +1,2 @@
+rootProject.name='House Pricing'
+include ':app'

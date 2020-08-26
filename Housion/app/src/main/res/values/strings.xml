@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">Housion</string>
+    <string name="register_button_text">REGISTER</string>
+    <string name="login_button_text">LOGIN</string>
+    <string name="register_info_text">Don\'t you have an account yet?</string>
+    <string name="email_hint_text">Type your e-mail address</string>
+    <string name="password_hint_text">Enter your password</string>
+    <string name="welcome_txt">Welcome to the Housion!</string>
+    <string name="fullname_text_hint">Full Name</string>
+    <string name="mail_hint_text2">Mail</string>
+    <string name="password_hint_text2">Password</string>
+    <string name="reg_button">Regıster</string>
+    <string name="already_text">Already have an account?</string>
+    <string name="return_log_btn_text">LOGIN</string>
+    <string name="return_reg_btn_text">REGISTER</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_about">About</string>
+    <string name="menu_profile">Profile</string>
+    <string name="prediction">Prediction</string>
+    <string name="result">Result</string>
+    <string name="menu_logout">Logout</string>
+    <string name="start_button_text">START PREDICTION</string>
+    <string name="next_button_text">Next</string>
+    <string name="prev_button_text">Prevıous</string>
+    <string name="result_button_text">Show Result</string>
+    <string name="return_home_button_text">Return Home</string>
+    <string name="province_text">Province:</string>
+    <string name="district_text">District:</string>
+    <string name="neighborhood_text">Neighborhood:</string>
+    <string name="gross_text">Gross m2:</string>
+    <string name="net_textView">Net m2:</string>
+    <string name="age_of_building_text">Age of the Building:</string>
+    <string name="build_floor_number_text">Build Floor Number:</string>
+    <string name="floors_of_apartment_text">Total Floor Number
+        :</string>
+    <string name="number_of_rooms_text">Number of Rooms:</string>
+    <string name="number_of_bathrooms_text">Number Of Bathrooms:</string>
+    <string name="credit_availability_text">Credit Availability:</string>
+    <string name="usage_status_text">Usage Status:</string>
+    <string name="heating_type_text">Heating Type:</string>
+    <string name="forgot_password_text">Forgot password?</string>
+    <string name="copyright_text">© Tayfun Güven\'s</string>
+    <string name="info_text">You can send your feedback the email given below:\n\nfeedback.housion@gmail.com</string>
+    <string name="edit_button_text">EDIT</string>
+
+    <!--FOR CREATING SPINNER ITEMS-->
+    <string-array name="province">
+            <item>İstanbul</item>
+    </string-array>
+    <string-array name="district">
+        <item>Beşiktaş</item>
+    </string-array>
+    <string-array name="neighborhood">
+        <item>Gayrettepe</item>
+    </string-array>
+    <string-array name="age">
+        <item>1</item><item>2</item><item>3</item><item>4</item>
+        <item>5</item> <item>6</item><item>7</item><item>8</item><item>9</item><item>10</item><item>11</item>
+        <item>12</item><item>13</item><item>14</item><item>15</item><item>16</item><item>17</item>
+        <item>18</item><item>19</item><item>20</item><item>20+</item>
+    </string-array>
+    <string-array name="floor_number">
+        <item>1</item><item>2</item><item>3</item><item>4</item>
+        <item>5</item> <item>6</item><item>7</item><item>8</item><item>9</item><item>10</item><item>11</item>
+        <item>12</item><item>13</item><item>14</item><item>15</item>
+        <item>Dublex</item>
+        <item>Villa</item>
+        <item>Triplex</item>
+        <item>Self-Contained</item>
+        <item>Pavilion</item>
+    </string-array>
+    <string-array name="total_floor">
+        <item>Kot3</item><item>Kot2</item><item>Kot1</item><item>Half ground floor</item><item>Ground floor</item>
+        <item>1</item><item>2</item><item>3</item><item>4</item>
+        <item>5</item> <item>6</item><item>7</item><item>8</item><item>9</item><item>10</item><item>11</item>
+        <item>12</item><item>13</item><item>14</item><item>15</item>
+    </string-array>
+    <string-array name="room_number">
+        <item>1+0</item><item>1+1</item><item>2+1</item><item>3+1</item>
+        <item>4+1</item><item>5+1</item><item>5+2</item><item>6+1</item><item>6+2</item>
+    </string-array>
+    <string-array name="bath_number">
+        <item>1</item><item>2</item><item>3</item><item>4</item>
+    </string-array>
+    <string-array name="credit">
+        <item>Available</item>
+        <item>Not available</item>
+        <item>Unknown</item>
+    </string-array>
+    <string-array name="usage">
+        <item>Tenant</item>
+        <item>Host</item>
+        <item>Null</item>
+    </string-array>
+    <string-array name="heating">
+        <item>Central heating</item>
+        <item>Combi</item>
+        <item>Stove</item>
+        <item>Climate</item>
+    </string-array>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.housepricing.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_step1Fragment"
+            app:destination="@id/step1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/step1Fragment"
+        android:name="com.example.housepricing.ui.prediction.Step1Fragment"
+        android:label="Prediction (1/5)"
+        tools:layout="@layout/fragment_step1">
+        <action
+            android:id="@+id/action_step1Fragment_to_step2Fragment"
+            app:destination="@id/step2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/step2Fragment"
+        android:name="com.example.housepricing.ui.prediction.Step2Fragment"
+        android:label="Prediction (2/5)"
+        tools:layout="@layout/fragment_step2">
+        <action
+            android:id="@+id/action_step2Fragment_to_step3Fragment"
+            app:destination="@id/step3Fragment" />
+        <action
+            android:id="@+id/action_step2Fragment_to_step1Fragment"
+            app:destination="@id/step1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/step3Fragment"
+        android:name="com.example.housepricing.ui.prediction.Step3Fragment"
+        android:label="Prediction (3/5)"
+        tools:layout="@layout/fragment_step3">
+        <action
+            android:id="@+id/action_step3Fragment_to_step4Fragment"
+            app:destination="@id/step4Fragment" />
+        <action
+            android:id="@+id/action_step3Fragment_to_step2Fragment"
+            app:destination="@id/step2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/step4Fragment"
+        android:name="com.example.housepricing.ui.prediction.Step4Fragment"
+        android:label="Prediction (4/5)"
+        tools:layout="@layout/fragment_step4">
+        <action
+            android:id="@+id/action_step4Fragment_to_step3Fragment"
+            app:destination="@id/step3Fragment" />
+        <action
+            android:id="@+id/action_step4Fragment_to_step5Fragment"
+            app:destination="@id/step5Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.housepricing.ui.prediction.ResultFragment"
+        android:label="Prediction Result"
+        tools:layout="@layout/fragment_result">
+        <action
+            android:id="@+id/action_resultFragment_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popUpTo="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/step5Fragment"
+        android:name="com.example.housepricing.ui.prediction.Step5Fragment"
+        android:label="Prediction (5/5)"
+        tools:layout="@layout/fragment_step5">
+        <action
+            android:id="@+id/action_step5Fragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+        <action
+            android:id="@+id/action_step5Fragment_to_step4Fragment"
+            app:destination="@id/step4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.housepricing.ui.about.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.housepricing.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>

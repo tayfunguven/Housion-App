@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:defaultNavHost="true"
+    app:navGraph="@navigation/mobile_navigation"
+    tools:context=".ui.home.HomeFragment"
+    android:configChanges="orientation"
+    android:screenOrientation="portrait">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="601dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_home"
+                android:layout_width="327dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:fontFamily="@font/amaranth"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/priceImage" />
+
+            <Button
+                android:id="@+id/button"
+                style="@android:style/TextAppearance.Material.Widget.Button.Colored"
+                android:layout_width="192dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="56dp"
+                android:background="@android:color/holo_green_light"
+                android:fontFamily="@font/amaranth_bold"
+                android:text="@string/start_button_text"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_home" />
+
+            <ImageView
+                android:id="@+id/priceImage"
+                android:layout_width="164dp"
+                android:layout_height="144dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/price_tag"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
